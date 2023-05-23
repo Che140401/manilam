@@ -63,21 +63,23 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
                     img{width: 100%;}
                    }
                    .content{padding-top: 3.2rem;padding-bottom: 3.49rem;padding-left:2rem;padding-right:2rem;
-                       p{line-height: 2.1rem;padding-bottom: 3.4rem;
-                           @media screen and (max-width: 700px) {font-size: 4.3rem;line-height: 3.5rem;
-                          }
+                       p{line-height: 2.9rem;padding-bottom: 3.4rem;
+                        @media screen and (max-width: 1279px) {font-size: 2.5rem;line-height: 3rem;}
+                        //    @media screen and (max-width: 700px) {font-size: 4.3rem;line-height: 3.5rem;
+                        //   }
                        }
-                       .heading04{font-family: 'FuturaMediumBT';font-size: 2.5rem;line-height: 2.7rem;padding-bottom: 1rem;
-                           
-                           @media screen and (max-width: 700px) {font-size: 4rem;line-height: 4.5rem;
-                          }
+                       .heading04{font-family: 'FuturaMediumBT';font-size: 2.5rem;line-height: 3.5rem;padding-bottom: 1rem;
+                        @media screen and (max-width: 1279px) {font-size: 3rem;}
+                        //    @media screen and (max-width: 700px) {font-size: 4rem;line-height: 4.5rem;
+                        //   }
                        }
                        .author{
                            .image{display: inline-block;
                            }
                            .text{font-size: 1.5rem;color: #AA7B32;margin-left: .6rem;
-                               @media screen and (max-width: 700px) {font-size: 3rem;
-                              }
+                            @media screen and (max-width: 1279px) {font-size: 2rem;}
+                            //    @media screen and (max-width: 700px) {font-size: 3rem;
+                            //   }
                            }
                        }
                        
@@ -92,27 +94,20 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
             }
             .next{position: relative;
             }
-            .prev::before{content: url('../img/Blog/prev-next-arrow.png');position: absolute;left: -20%;top: -20%;
-                @media screen and (max-width: 1700px) {top: -35%;                  }
-                  @media screen and (max-width: 1400px) {top: -53%;left: -30%;                  }
+            .prev::before{content: url('../img/Blog/prev-next-arrow.png');position: absolute;left: -20%;top: -25%;
+                @media screen and (max-width: 1700px) {top: -40%;}
+                  @media screen and (max-width: 1400px) {top: -65%;left: -25%;}
                   @media screen and (max-width: 1300px) {top: -65%;left: -30%;                  }
             }
             .next::after{content: url('../img/Blog/prev-next-arrow.png');position: absolute;transform: rotate(180deg);right: -40%;top: -5%;
-                @media screen and (max-width: 1700px) {
-                    top: -16%;
-                  }
-                  @media screen and (max-width: 1400px) {
-                    top: -35%;
-                    right: -53%;
-                  }
-                  @media screen and (max-width: 1300px) {
-                    top: -50%;
-                    left: -53%;
-                  }
+                @media screen and (max-width: 1700px) {top: -16%;}
+                  @media screen and (max-width: 1400px) {top: -35%;right: -49%;}
+                  @media screen and (max-width: 1300px) {top: -50%;left: -53%;}
             }
            }
            .bottom-contain{margin-top: 7.25rem;
             .p1{line-height: 3rem;
+                font-size: 2.5rem;
             }
             .heading02{margin-bottom: 1.25rem;
             }
@@ -143,14 +138,14 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
         .image{margin-bottom: 1.9rem;
         }
         p{line-height: 3rem;
-            @media screen and (max-width: 1023px) {line-height: 4.3rem;font-size: 3.5rem;}
+            @media screen and (max-width: 1279px) {font-size: 2.5rem;}
         }
         p:first-child{margin-bottom: 4.3rem;
         }
         .box{margin-top: 4.2rem;
         }
         h3{margin-bottom: 1.9rem;
-            @media screen and (max-width: 1023px) {font-size: 4rem;}
+            @media screen and (max-width: 1279px) {font-size: 3rem;}
         }
         
     }
@@ -158,17 +153,18 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 .right-contain{
           
     .heading04{font-family: 'FuturaMediumBT';font-size: 2.5rem;padding-bottom: 3.4rem;
-        @media screen and (max-width: 1023px) {font-size: 4rem;
-}
+        @media screen and (max-width: 1279px) {font-size: 3rem;}
+        @media screen and (max-width: 1023px) {font-size: 4rem;}
         
     }
     .box{margin-bottom: 1.3rem;
         .image{display: inline-block;vertical-align: middle;
         }
         .content{display: inline-block;vertical-align: middle;width: calc(100% - 15rem - 60px);padding-left: 2.5rem;
-            p{line-height: 2.4rem;text-transform: uppercase;
-                @media screen and (max-width: 1279px) {line-height: 2.8rem;                  }
-                  @media screen and (max-width: 1023px) {line-height: 4.3rem;font-size: 3rem;                  }
+            h4{line-height: 2.9rem;text-transform: uppercase;font-size: 2rem;
+                @media screen and (max-width: 1279px) {line-height: 2.8rem;}
+                  @media screen and (max-width: 1023px) {line-height: 4.3rem;font-size: 3rem; }
+                  @media screen and (max-width: 700px) {font-size: 2.5rem; }
             }
         }
     }
