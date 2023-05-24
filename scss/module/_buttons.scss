@@ -1,7 +1,11 @@
 
-.sticy-section{position: fixed;top: 33%;width: 4%;right:0;
+.sticy-section{position: fixed;bottom:4%;width: 3%;right:0;
+    @include breakpoint (max,970px){width: 5%;}
+    @include breakpoint (max,678px){width: 7%;}
+    @include breakpoint (max,500px){width: 8%;}
+
     .db-btn{    margin-bottom: 2rem;}
     .wp-btn{padding: 1rem; background: #48B760;border-bottom-left-radius: 15px;border-top-left-radius: 15px;}
 }
 
-.d-flip-btn{font-size: 1.5rem;padding: 0.7rem 1.3rem;background: #AA7B32;border-radius: 9px;}
+.d-flip-btn{font-size: 1.5rem;padding: 0.7rem 1.3rem;background: #AA7B32;border-radius: 7px;}

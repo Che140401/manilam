@@ -1,5 +1,14 @@
-.header{padding: 1.5rem 0;border-bottom: 1px solid #AA7B32;background:#000;
+.header{padding: 1.5rem 0;border-bottom: 1px solid #AA7B32;position: fixed;top: 0;left: 0;right: 0;z-index: 9;background: rgba(15, 16, 28, 0.4);
+
     nav{display: flex;justify-content: space-between;align-items: center;
+        .header-left-box{
+            img{width: 150px;
+                @include breakpoint(max,1600px){width: 125px;}
+                @include breakpoint(max,1279px){width: 110px;}
+                @include breakpoint(max,970px){width: 90px;}
+
+            }
+        }
         .header-right-box{
             ul{display: flex;justify-content: space-between;align-items: center;
                 li{margin-left: 5rem;font-size: 2.3rem;color: #fff;line-height: 3.1rem;}
