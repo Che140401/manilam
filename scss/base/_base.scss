@@ -185,7 +185,10 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 .home-content-left p{line-height: 3rem;}
 
 .about-us {
-    .container-sm{display: grid;grid-template-columns: 45% 55%;justify-content: center;
+    .s-container{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        justify-content: center;
         
         .discover-btn{
             background-color:$btn-bg-color;
@@ -229,8 +232,14 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
     }
 }
 
-.Our-blog{margin-top: 3.9rem;
-    .contain{ display: grid;grid-template-columns: repeat(3,31%);column-gap: 4rem; margin-top: 4.6rem;
+.Our-blog{
+    
+    margin-top: 3.9rem;
+    .contain{
+        display: grid;
+        grid-template-columns: repeat(3,31%);
+        column-gap: 4rem;
+        margin-top: 4.6rem;
         .box{
             .image{
                 img{
@@ -257,7 +266,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 }
 
 .Our-Works{    margin-top: 3.9rem;    background-image: url('../img/home/our-works/background-img.jpg');
-    .container-sm{padding-top: 6.6rem;padding-bottom: 6.3rem  ;
+    .s-container{padding-top: 6.6rem;padding-bottom: 6.3rem  ;
         .top{display: grid;grid-template-columns: 45% 55%;justify-content: center;align-items: center;}
         .bottom{display: grid;grid-template-columns: repeat(4,1fr);margin-top: 4.9rem;
             .box{
@@ -287,7 +296,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 
 .discover-idea{
     
-    .container-sm{display: grid;grid-template-columns: 1fr 1fr;align-items: center;    }
+    .s-container{display: grid;grid-template-columns: 1fr 1fr;align-items: center;    }
     .Items{margin-top: 3.85rem;    }
     
 }
