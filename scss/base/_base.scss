@@ -177,5 +177,12 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 }
 
 .coll-detail-section{
-    .key-feat-row{    display: grid;grid-template-columns: 1fr 1fr 1fr;}
+    .key-feat-row{    display: grid;grid-template-columns: 1fr 1fr 1fr;
+        .Feature-box{padding: 8.6rem 8rem;text-align: center;border: 1px solid #707070;
+            &:nth-child(even){background: #F3F3F3;}
+            .key-img{padding-bottom: 6rem;
+                img{margin: 0 auto;}
+            }
+        }
+    }
 }
