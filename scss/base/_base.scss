@@ -8,6 +8,7 @@ body{color:#545252;font-family: "FuturaMediumBT";}
 
 .s-container{max-width: 1160px;width: 90%;margin: 0 auto;}
 .container{max-width: 1539px;width: 90%;margin: 0 auto;}
+.container-odd{max-width: 1270px;width: 90%;margin: 0 auto;}
 .section{padding-top: 6.5rem;}
 
 .text-center{text-align: center;}
@@ -68,7 +69,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
                         //    @media screen and (max-width: 700px) {font-size: 4.3rem;line-height: 3.5rem;
                         //   }
                        }
-                       .heading04{font-family: 'FuturaMediumBT';font-size: 2.5rem;line-height: 3.5rem;padding-bottom: 1rem;
+                       .heading04{font-size: 2.5rem;line-height: 3.5rem;padding-bottom: 1rem;
                         @media screen and (max-width: 1279px) {font-size: 3rem;}
                         //    @media screen and (max-width: 700px) {font-size: 4rem;line-height: 4.5rem;
                         //   }
@@ -88,7 +89,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
            }
            .prev-next-btn{margin-top: 3.1rem;margin-left: 63.3rem;
             p{
-                font-family: 'futurabookbt';color: #AA7B32;font-size: 3rem;display: inline-block;
+                color: #AA7B32;font-size: 3rem;display: inline-block;
             }
             .prev{position: relative;margin-right: 5.3rem;
             }
@@ -129,7 +130,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
     .bread-crumbs{margin-bottom: 3.02rem;
         .image{display: inline-block;vertical-align:middle;margin-right: 0.9rem;
         }
-        p{display: inline-block;vertical-align: -webkit-baseline-middle;margin-right: 0.9rem;font-family: 'FuturaMediumBT';font-size: 3.5rem;
+        p{display: inline-block;vertical-align: -webkit-baseline-middle;margin-right: 0.9rem;font-size: 3.5rem;
         }
     }
     .left-contain{
@@ -152,7 +153,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 }   
 .right-contain{
           
-    .heading04{font-family: 'FuturaMediumBT';font-size: 2.5rem;padding-bottom: 3.4rem;
+    .heading04{font-size: 2.5rem;padding-bottom: 3.4rem;
         @media screen and (max-width: 1279px) {font-size: 3rem;}
         @media screen and (max-width: 1023px) {font-size: 4rem;}
         
@@ -171,3 +172,125 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
     .bottom-contain{margin-top: 3.6rem; 
     }
 }
+
+
+
+// Home page
+.home-content-left .heading{
+    // font-family: 'FuturaMediumBT';
+   
+    font-size: 2rem ;
+}
+.home-content-left .heading02{margin-bottom: 1.2rem;    margin-top: 1.6rem;}
+.home-content-left p{line-height: 3rem;}
+
+.about-us {
+    .container-sm{display: grid;grid-template-columns: 45% 55%;justify-content: center;
+        
+        .discover-btn{
+            background-color:$btn-bg-color;
+            font-size: 2.1rem;
+            // font-family: 'FuturaMediumBT';
+            color:#FFFFFF;
+            padding-left: 4.2rem;
+            padding-right: 2.4rem;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+            position: relative;
+            border: none;
+            margin-top: 3.9rem;
+        }
+        .discover-btn::before{
+            content: '';
+            position: absolute;
+            background-image: url('../img/home/discover-more.png');
+            background-repeat: no-repeat;
+            width: 20%;
+            background-size: 69%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .discover-btn::after{
+            content: '';
+            position: absolute;
+            background-image: url('../img/home/plus-home.png');
+            background-repeat: no-repeat;
+            width: 10%;
+            height: 42%;
+            background-size: 83%;
+            left: 2%;
+        }
+
+        
+        .right{
+            margin-left: 5.23rem;
+        }
+    }
+}
+
+.Our-blog{margin-top: 3.9rem;
+    .contain{ display: grid;grid-template-columns: repeat(3,31%);column-gap: 4rem; margin-top: 4.6rem;
+        .box{
+            .image{
+                img{
+                    width: 100%;
+                }
+            }
+            .content{
+                padding-top: 3.2rem;padding-bottom: 3.49rem;padding-left:3rem;padding-right: 2rem;background-color:$Blog-bg-color;
+                .heading04{
+                    font-size: 2rem;line-height: 2.5rem;    margin-bottom: 1rem;
+                }
+                .author{
+                    .image{
+                        display: inline-block;
+                    }
+                    .text{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.Our-Works{    margin-top: 3.9rem;    background-image: url('../img/home/our-works/background-img.jpg');
+    .container-sm{padding-top: 6.6rem;padding-bottom: 6.3rem  ;
+        .top{display: grid;grid-template-columns: 45% 55%;justify-content: center;align-items: center;}
+        .bottom{display: grid;grid-template-columns: repeat(4,1fr);margin-top: 4.9rem;
+            .box{
+               position: relative;padding-left: 3.58rem;
+                
+                h3{font-family: 'FuturaBoldBT';font-size: 2rem;margin-top: 2.22rem;    margin-bottom: 1rem;position: relative;}
+                h3::before{content: '';position: absolute;width: 9%;height: 100%;background-color: #F8C54F;    border-radius: 100%;opacity: .8;    left: -3%;    top: -40%;}
+            }
+        }
+        .box::before{content: '';position: absolute;background-image: url('../img/home/our-works/design-before-1.svg');width: 4%;height: 100%;background-repeat: no-repeat;left: 0%;
+        }
+        .maintenance::before{background-image: url('../img/home/our-works/low-maintenance-before-2.svg');}
+    }
+}
+
+.laminate-sec{
+    .box{
+        display: grid;    grid-template-columns: 1fr 1fr;align-items:center;
+        .content{
+            grid-column: 2/3;    grid-row: 1;padding-left: 6.3rem;
+        }
+        .odd-content{
+            grid-column: 1/2;text-align: end;padding-right: 4.4rem;
+        }
+    }
+}
+
+.discover-idea{
+    
+    .container-sm{display: grid;grid-template-columns: 1fr 1fr;align-items: center;    }
+    .Items{margin-top: 3.85rem;    }
+    
+}
+
+
+

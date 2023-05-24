@@ -15,7 +15,13 @@ $(document).ready(function () {
 });
 
 
-
+$('.Items').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+   prevArrow: false,
+    nextArrow: false
+});
 
 
 });
