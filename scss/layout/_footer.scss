@@ -1,6 +1,8 @@
 .footer{background: #2A2A2A;padding-bottom:5.6rem;margin-top: 7rem;
     .footer-row{    display: grid;grid-template-columns: 1fr 1fr 1fr;align-items:baseline;
         grid-column-gap: 20rem;
+        @include breakpoint (max,970px){grid-column-gap: 6rem;}
+        @include breakpoint (max,768px){display: block;}
         .footer-first-row{color: #fff;
             .fotter-logo{padding-block: 3.4rem;}
             .corporate-off{font-size:1.5rem;}
@@ -8,9 +10,10 @@
             .resevrd{font-size: 1.2rem;margin-top: 2.8rem;}
         }
         .footer-second-row {
-            .resevrd{margin-top: 1rem;}
+            .resevrd{margin-top: 0;}
         }
         .footer-third-row{display: flex;align-items: center;grid-column-gap: 7rem;
+        @include breakpoint (max,768px){justify-content: space-between;}
             .two-row{
                 .social-row{display: grid;grid-template-columns: 1fr 1fr;grid-gap: 1rem;margin-top: 2rem;}
             }

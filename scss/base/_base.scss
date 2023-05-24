@@ -20,28 +20,29 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 // banner-section
 .banner-section{position: relative;
     .banner-box{position: absolute;left: 21%;top:50%;transform: translateY( -50%);
-        .heading01{font-size: 8.1rem;line-height: 8.9rem;color: #FFFFFF;}
+        @include breakpoint (max,768px){top: 57%;}
+        .heading01{font-size: 8.1rem;line-height: 8.9rem;color: #FFFFFF;
+            @include breakpoint (max,970px){font-size: 6.1rem;line-height: 6.9rem;}
+            @include breakpoint (max,678px){    font-size: 5.1rem;line-height: 5.9rem;}
+            @include breakpoint (max,500px){font-size: 3.1rem;line-height: 3.9rem;}
+        }
     }
    
 }
 
 .gallery-section{
     .gallery-row{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 3.4rem;
+        @include breakpoint (max,768px){display: block;}
         .gallery-box{
+            img{width: 100%;}
         }
     }
 }
 
-
-.owl-item.active.center{
-    transform: scale(1.6);
-    z-index: 99999;
-    position: relative;
-    // opacity: 1;
-}
-// .owl-item.active{transform: scale(1);}
-.owl-item.active{transform: scale(1);}
-
+// owl crowsel css
+.gallery-center-slider .owl-item.active.center{transform: scale(1.6);z-index: 99999;position: relative;}
+.gallery-center-slider .owl-item.active{transform: scale(1);}
+.gallery-center-slider .owl-stage-outer{padding-top: 100px !important;padding-bottom: 100px !important;}
 
 // chetan css
 .left-contain{display: inline-block;width: 62.76%;
@@ -51,7 +52,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
     .right-contain{display: inline-block;width: 37%;vertical-align: top;padding-left: 4.6rem;
         @media screen and (max-width: 1023px) {width: 100%;display: block;padding-left: 0rem;margin-top: 10rem;
         }}
-.blog-section{margin-top: 10.5rem;
+.blog-section{
     .contain{
        
         .left-contain{
@@ -74,7 +75,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
                         //    @media screen and (max-width: 700px) {font-size: 4rem;line-height: 4.5rem;
                         //   }
                        }
-                       .author{
+                       .author{display: flex;
                            .image{display: inline-block;
                            }
                            .text{font-size: 1.5rem;color: #AA7B32;margin-left: .6rem;
@@ -87,7 +88,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
                    }
                }
            }
-           .prev-next-btn{margin-top: 3.1rem;margin-left: 63.3rem;
+           .prev-next-btn{margin-top: 3.1rem;text-align:right;margin-right: 5rem;
             p{
                 color: #AA7B32;font-size: 3rem;display: inline-block;
             }
@@ -110,6 +111,9 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
             .p1{line-height: 3rem;
                 font-size: 2.5rem;
             }
+            .contain{display: block;
+                .box{margin-left: 1.3rem;}
+            }
             .heading02{margin-bottom: 1.25rem;
             }
             .contain{margin-top: 4.6rem;             
@@ -131,7 +135,6 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
         .image{display: inline-block;vertical-align:middle;margin-right: 0.9rem;
         }
         p{display: inline-block;vertical-align: -webkit-baseline-middle;margin-right: 0.9rem;font-size: 3.5rem;
-        }
     }
     .left-contain{
         h1{margin-bottom: 1.18rem;
@@ -172,7 +175,6 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
     .bottom-contain{margin-top: 3.6rem; 
     }
 }
-
 
 
 // Home page
@@ -303,3 +305,13 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 
 
 
+.coll-detail-section{
+    .key-feat-row{    display: grid;grid-template-columns: 1fr 1fr 1fr;
+        .Feature-box{padding: 8.6rem 8rem;text-align: center;border: 1px solid #707070;
+            &:nth-child(even){background: #F3F3F3;}
+            .key-img{padding-bottom: 6rem;
+                img{margin: 0 auto;}
+            }
+        }
+    }
+}
