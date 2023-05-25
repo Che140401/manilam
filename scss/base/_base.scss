@@ -9,7 +9,9 @@ body{color:#545252;font-family: "FuturaMediumBT";}
 .s-container{max-width: 116rem;width: 90%;margin: 0 auto;}
 .container{max-width: 153.9rem;width: 90%;margin: 0 auto;}
 .container-odd{max-width: 127rem;width: 90%;margin: 0 auto;}
-.section{padding-top: 6.5rem;}
+.mt-48{margin-top: 4.8rem;}
+.section{padding-block: 6.5rem 5rem;}
+
 
 .text-center{text-align: center;}
 .heading02{font-size: 4.8rem;line-height: 4.7rem;margin-bottom: 1.6rem;}
@@ -40,9 +42,19 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
     .home-content-left::before{width: 95rem;    height: 24%;}
 }
 // owl crowsel css
-.gallery-center-slider .owl-item.active.center{transform: scale(1.6);z-index: 99999;position: relative;}
+.gallery-center-slider .owl-item.active.center{transform: scale(1.6);z-index: 99999;position: relative;
+    @include breakpoint (max,768px){transform: scale(1);}
+}
 .gallery-center-slider .owl-item.active{transform: scale(1);}
-.gallery-center-slider .owl-stage-outer{padding-top: 100px !important;padding-bottom: 100px !important;}
+.gallery-center-slider .owl-stage-outer{padding-top: 100px !important;padding-bottom: 100px !important;
+    @include breakpoint (max,768px){padding-top: 0 !important;padding-bottom: 0 !important;}
+
+}
+
+//slick
+// .gallery-center-slider .gallery-box.slick-slide.slick-current.slick-active.slick-center{transform: scale(1.6);z-index: 99999;position: relative;}
+// .gallery-center-slider .owl-item.active{transform: scale(1);}
+// .gallery-center-slider .gallery-box.slick-slide.slick-active{padding-top: 100px !important;padding-bottom: 100px !important;}
 
 // chetan css
 .left-contain{display: inline-block;width: 62.76%;
@@ -258,11 +270,64 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 
 //coll-detail-section
 .coll-detail-section{
-    .key-feat-row{    display: grid;grid-template-columns: 1fr 1fr 1fr;
+    .key-feat-row{display: grid;grid-template-columns: 1fr 1fr 1fr;margin-top: 5.9rem;
         .Feature-box{padding: 8.6rem 8rem;text-align: center;border: 1px solid #707070;
             &:nth-child(even){background: #F3F3F3;}
             .key-img{padding-bottom: 6rem;
                 img{margin: 0 auto;}
+            }
+        }
+        
+    }
+}
+
+//similar-product-section
+.similar-product-section{
+    .similar-product-row {
+    }
+    .btn-box{margin-top: 5rem;}
+    .btn{padding: 2rem 6rem;font-size: 3.5rem;background: #AA7B32;color: #FFFFFF;}
+}   
+
+.similar-product-img.slick-slide img{width: 100%;padding-right:4rem;
+    // &:last-child{padding-right: 0;}
+}
+
+
+//collection-deatil-section
+.collection-deatil-section{
+    .row{display: grid;grid-template-columns: 12% 42% 1fr;align-items: center;
+        .first-row{
+            .first-row-img{}
+        }
+        .third-row{
+            span{font-size: 5.1rem;font-weight: bold;line-height: 5.8rem;}
+            h2{font-size: 5.1rem;line-height: 5.8rem;}
+            .btn-row{display: flex;grid-column-gap: 1.8rem;margin-top: 3.6rem;
+                .enq-btn{padding: 1.5rem 2.8rem;background:#D4A154;font-size: 2rem;color: #FFFFFF;border-radius: 15px;}
+            }
+            .prd-desciption{margin-top: 2.9rem;
+                table {font-size: 2rem;border-collapse: collapse;width: 90%;}
+                  td {border: 1px solid #dddddd;text-align: left;padding-block: 1.5rem;padding-left: 4.2rem;}
+                  th{background: #AA7B32;color: #FFFFFF;padding-block: 1.5rem;padding-left: 4.2rem;}
+                  .note{font-size: 1.5rem;margin-top: 0.5rem;}
+            }
+            .texture-row{margin-top: 5.4rem;
+                p{text-transform: uppercase;}
+                .texture-img-row{display: grid;grid-template-columns:1fr 1fr 1fr;grid-column-gap: 2.1rem;margin-top: 1.8rem;}
+            }
+        }
+    }
+}
+
+//coll-listing-section
+.coll-listing-section{
+    .Listing-row{display: grid;grid-template-columns: 25% 1fr;margin-top: 5rem;
+        .right-box{
+            .inner-right-box{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 5.4rem;
+                .coll-box{
+                    img{width: 100%;}
+                }
             }
         }
     }
