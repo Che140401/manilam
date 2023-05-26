@@ -285,6 +285,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
         .image{
             img{position: relative;z-index: 99999;}
         }
+        .br1{display: block;}
     }
     .boder-line-bx::before{content:'';position: absolute;width: 15%;height: 30%;left: 10%;border-top: 1px solid #707070;border-left: 1px solid #707070;border-bottom: 1px solid #707070;top: 28%;}
     .boder-line-bx::after{content:'';position: absolute;width: 15%;height: 30%;right: 10%;border-top: 1px solid #707070;border-left: 1px solid #707070;    transform: rotate(180deg);border-bottom: 1px solid #707070;top: 28%;}
@@ -511,9 +512,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 
 
 // mobile scss
-.header{
-    @include breakpoint(max,700px){display: none;}
-}
+
 .home-content-left{
     h3{@include breakpoint(max,700px){font-size: 2.5rem;}}
 }
