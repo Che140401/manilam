@@ -1,5 +1,5 @@
-.footer{background: #2A2A2A;padding-bottom:5.6rem;margin-top: 7rem;
-    @include breakpoint (max,768px){margin-top: 0rem;}
+.footer{background: #2A2A2A;padding-bottom:5.6rem;margin-top: 7rem;margin-top: 5.5rem;
+    // @include breakpoint (max,768px){margin-top: 0rem;}
     .footer-row{    display: grid;grid-template-columns: 1fr 1fr 1fr;align-items:baseline;
         grid-column-gap: 20rem;
         @include breakpoint (max,970px){grid-column-gap: 6rem;}
