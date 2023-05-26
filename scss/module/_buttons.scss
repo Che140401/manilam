@@ -1,5 +1,5 @@
 
-.sticy-section{position: fixed;bottom:4%;width: 3%;right:0;z-index: 99;
+.sticy-section{position: fixed;bottom:4%;width: 3%;right:0;z-index: 9999999;
     @include breakpoint (max,970px){width: 5%;}
     @include breakpoint (max,678px){width: 7%;}
     @include breakpoint (max,500px){width: 8%;}
@@ -12,7 +12,7 @@
 
 
 .discover-btn{background-color:$btn-bg-color;font-size: 2.1rem;color:#FFFFFF;padding-left: 4.2rem;padding-right: 2.4rem;padding-bottom: 1.5rem;padding-top: 1.5rem;position: relative;border: none;}
-        .discover-btn::before{content: '';position: absolute;background-image: url('../img/home/discover-more.png');background-repeat: no-repeat;width: 20%;background-size: 69%;height: 100%;top: 0;left: 0;}
+        .discover-btn::before{content: '';position: absolute;background-image: url('../img/home/discover-more.png');background-repeat: no-repeat;width: 20%;background-size: 60%;height: 100%;top: 0;left: 0;}
         .discover-btn::after{content: '';position: absolute;background-image: url('../img/home/plus-home.png');background-repeat: no-repeat;width: 10%;height: 42%;background-size: 83%;left: 2%;}
 
 

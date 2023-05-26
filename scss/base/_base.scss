@@ -19,7 +19,9 @@ body{color:#545252;font-family: "FuturaMediumBT";}
 .text-center{text-align: center;}
 .heading02{font-size: 4.8rem;line-height: 4.7rem;margin-bottom: 1.6rem;}
 .heading05{font-size: 2.5rem;line-height: 2.9rem;margin-top: 3.8rem;}
-p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
+p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
+@include breakpoint (max,700px){font-size: 2.5rem;}
+}
 
 // banner-section
 .banner-section{position: relative;
@@ -94,10 +96,10 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
                         //    @include breakpoint (max,700px) {font-size: 4rem;line-height: 4.5rem;
                         //   }
                        }
-                       .author{display: flex;
+                       .author{display: flex;align-items: center;gap: 1rem;
                            .image{display: inline-block;
                            }
-                           .text{font-size: 1.5rem;color: #AA7B32;margin-left: .6rem;
+                           .text{font-size: 1.5rem;color: #AA7B32;
                             @include breakpoint (max,1279px) {font-size: 2rem;}
                             //    @include breakpoint (max,700px) {font-size: 3rem;
                             //   }
@@ -108,20 +110,22 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
                }
            }
            .prev-next-btn{margin-top: 3.1rem;text-align:right;margin-right: 5rem;
+            .arrow{display: inline-block;vertical-align: middle;}
+            .text{display: inline-block;vertical-align: sub;    margin-left: 1.1rem;}
             p{color: #AA7B32;font-size: 3rem;display: inline-block;}
-            .prev{position: relative;margin-right: 5.3rem;}
-            .next{position: relative;
+            .prev{position: relative;margin-right: 5.3rem;cursor: pointer;}
+            .next{position: relative;cursor: pointer;
             }
-            .prev::before{content: url('../img/Blog/prev-next-arrow.png');position: absolute;left: -20%;top: -25%;
-                @include breakpoint (max,1700px) {top: -40%;}
-                  @include breakpoint (max,1400px) {top: -65%;left: -25%;}
-                  @include breakpoint (max,1300px) {top: -65%;left: -30%;                  }
-            }
-            .next::after{content: url('../img/Blog/prev-next-arrow.png');position: absolute;transform: rotate(180deg);right: -40%;top: -5%;
-                @include breakpoint (max,1700px) {top: -16%;}
-                  @include breakpoint (max,1400px) {top: -35%;right: -49%;}
-                  @include breakpoint (max,1300px) {top: -50%;left: -53%;}
-            }
+            // .prev::before{content: url('../img/Blog/prev-next-arrow.png');position: absolute;left: -20%;top: -25%;
+            //     @include breakpoint (max,1700px) {top: -40%;}
+            //       @include breakpoint (max,1400px) {top: -65%;left: -25%;}
+            //       @include breakpoint (max,1300px) {top: -65%;left: -30%;                  }
+            // }
+            // .next::after{content: url('../img/Blog/prev-next-arrow.png');position: absolute;transform: rotate(180deg);right: -40%;top: -5%;
+            //     @include breakpoint (max,1700px) {top: -16%;}
+            //       @include breakpoint (max,1400px) {top: -35%;right: -49%;}
+            //       @include breakpoint (max,1300px) {top: -50%;left: -53%;}
+            // }
            }
            .bottom-contain{margin-top: 7.25rem;
             .p1{line-height: 3rem;
@@ -144,9 +148,9 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
                 
             }
             .box{margin-bottom: 1.3rem;
-                .image{display: inline-block;vertical-align: middle;
+                .image{display: inline-block;vertical-align: middle;width: 28%;@include breakpoint (max,1023px) {width: auto;}@include breakpoint (max,700px) {width: 28%;}
                 }
-                .content{display: inline-block;vertical-align: middle;width: calc(100% - 15rem - 60px);padding-left: 2.5rem;
+                .content{display: inline-block;vertical-align: middle;width: 72%;padding-left: 3rem;margin-left: -4px;
                     h4{line-height: 2.9rem;text-transform: uppercase;font-size: 2rem;
                         @include breakpoint (max,1279px) {line-height: 2.8rem;}
                           @include breakpoint (max,1023px) {line-height: 4.3rem;font-size: 3rem; }
@@ -169,15 +173,15 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
     h5{font-size: 1.5rem;}
     h6{font-size: 1rem;}
     .bread-crumbs{margin-bottom: 3.02rem;
-        .image{display: inline-block;vertical-align:middle;margin-right: 0.9rem;    
+        .image{display: inline-block;vertical-align:middle;margin-right: 0.9rem;    @include breakpoint (max,700px) {margin-right: 0rem;}
         }
-        p{display: inline-block;vertical-align: -webkit-baseline-middle;margin-right: 0.9rem;font-size: 3.5rem;
+        p{display: inline-block;vertical-align: -webkit-baseline-middle;margin-right: 0.9rem;@include breakpoint (max,1279px) {font-size: 3rem;}@include breakpoint (max,700px) {font-size: 2.8rem;margin-right: 0rem;}
     }}
     .left-contain{
         h1{margin-bottom: 1.18rem;}
         .image{margin-bottom: 1.9rem;}
         p{line-height: 3rem;
-            @include breakpoint (max,1279px) {font-size: 2.5rem;}
+            @include breakpoint (max,1279px) {font-size: 3rem;line-height: 3.5rem;}
         }
         p:first-child{margin-bottom: 4.3rem;}
         .box{margin-top: 4.2rem;
@@ -187,27 +191,28 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
         }
     }
   
-.right-contain{
+    .right-contain{
           
-    .heading04{font-size: 2.5rem;padding-bottom: 3.4rem;
-        @include breakpoint (max,1279px) {font-size: 3rem;}
-        @include breakpoint (max,1023px) {font-size: 4rem;}
-        
-    }
-    .box{margin-bottom: 1.3rem;
-        .image{display: inline-block;vertical-align: middle;
+        .heading04{font-size: 2.5rem;padding-bottom: 3.4rem;
+            @include breakpoint (max,1279px) {font-size: 3rem;}
+            @include breakpoint (max,1023px) {font-size: 4rem;}
+            
         }
-        .content{display: inline-block;vertical-align: middle;width: calc(100% - 15rem - 60px);padding-left: 2.5rem;
-            h4{line-height: 2.9rem;text-transform: uppercase;font-size: 2rem;
-                @include breakpoint (max,1279px) {line-height: 2.8rem;}
-                  @include breakpoint (max,1023px) {line-height: 4.3rem;font-size: 3rem; }
-                  @include breakpoint (max,700px) {font-size: 2.5rem; }
+        .box{margin-bottom: 1.3rem;
+            .image{display: inline-block;vertical-align: middle;width: 28%;@include breakpoint (max,1023px) {width: auto;}
+            @include breakpoint (max,700px) {width: 28%;}
+            }
+            .content{display: inline-block;vertical-align: middle;width: 72%;padding-left: 3rem;margin-left: -4px;
+                h4{line-height: 2.9rem;text-transform: uppercase;font-size: 2rem;
+                    @include breakpoint (max,1279px) {line-height: 2.8rem;}
+                      @include breakpoint (max,1023px) {line-height: 4.3rem;font-size: 3rem; }
+                      @include breakpoint (max,700px) {font-size: 2.5rem; }
+                }
             }
         }
+        .bottom-contain{margin-top: 3.6rem; 
+        }
     }
-    .bottom-contain{margin-top: 3.6rem; 
-    }
-}
 }
 
 // Home page
@@ -232,6 +237,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
         @include breakpoint (max,700px) {display: block; }
         .right{margin-left: 5.23rem;}
         .discover-btn{    margin-top: 3.9rem;}
+        .discover-btn::before{background-size: 68%;}
     }
 }
 
@@ -244,10 +250,10 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
                 img{width: 100%;}
             }
             .content{padding-top: 3.2rem;padding-bottom: 3.49rem;padding-left:3rem;padding-right: 2rem;background-color:$Blog-bg-color;
-                .heading04{font-size: 2rem;line-height: 2.5rem;    margin-bottom: 1rem;}
+                .heading04{font-size: 2rem;line-height: 2.5rem;    margin-bottom: 1rem; @include breakpoint (max,700px) {font-size: 3rem;line-height: 3rem;margin-bottom: 2rem;}}
                 .author{
-                    .image{display: inline-block;}
-                    .text{ font-size: 1.5rem; }
+                    .image{display: inline-block;vertical-align: middle;}
+                    .text{ font-size: 1.5rem; vertical-align: middle; @include breakpoint (max,700px) {font-size: 2.1rem;}}
                 }
             }
         }
@@ -279,6 +285,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 //laminate-section
 .laminate-sec{
     position: relative;
+    .heading02{@include breakpoint (max,700px){text-align: center;margin-block: 5rem;}}
     .box{
         display: grid;    grid-template-columns: 1fr 1fr;align-items:center;
         .content{ grid-column: 2/3;    grid-row: 1;padding-left: 6.3rem;}
@@ -286,7 +293,8 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
         .image{
             img{position: relative;z-index: 99999;}
         }
-        .br1{display: block;}
+        .br1{@include breakpoint (max,700px){display: none;
+            }}
     }
     .boder-line-bx::before{content:'';position: absolute;width: 15%;height: 30%;left: 10%;border-top: 1px solid #707070;border-left: 1px solid #707070;border-bottom: 1px solid #707070;top: 28%;}
     .boder-line-bx::after{content:'';position: absolute;width: 15%;height: 30%;right: 10%;border-top: 1px solid #707070;border-left: 1px solid #707070;    transform: rotate(180deg);border-bottom: 1px solid #707070;top: 28%;}
@@ -542,7 +550,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
         }
     }
     .collection-items{
-        .bottom{@include breakpoint(max,1500px){gap: 8rem;}@include breakpoint(max,1023px){    margin-top: -6rem;    margin-right: 0.5rem;}
+        .bottom{@include breakpoint(max,1500px){gap: 8rem;}@include breakpoint(max,1023px){    margin-top: -6rem;    margin-right: 0.5rem;}@include breakpoint(max,700px){justify-content: space-around;gap: 0rem;margin-top: -10rem;}
         .right{@include breakpoint(max,1500px){width: 45%;}}
     }
     }
