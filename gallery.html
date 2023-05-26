@@ -21,14 +21,17 @@
           <div class="header-left-box">
             <img src="img/logo.png" alt="logo">
           </div>
-          <div class="header-right-box">
+          <button class="menu-btn">
+            <span></span>
+          </button>
+          <div class="header-right-box mob-menubar">
             <ul>
-              <li>About Us</li>
-              <li>Collections</li>
-              <li>Experience</li>
-              <li>Blog</li>
-              <li>Gallery</li>
-              <li>Contact</li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Collections</a></li>
+              <li><a href="">Experience</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -57,7 +60,7 @@
     <section class="section gallery-section">
       <div class="container">
         <h2 class="heading02 text-center">Events and Activities</h2>
-        <div class="gallery-row">
+        <div class="gallery-row ">
           <div class="gallery-box">
             <img src="img/gallery/event2.png" alt="">
             <h5 class="heading05 text-center">Lorem Ipsum Eventon 2023</h5>
@@ -168,7 +171,49 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/common.js"></script>
+<script>
+    $('.owl-carousel, .gallery-center-slider ').owlCarousel({
+    stagePadding:0,
+    loop:true,
+    nav:true,
+    items:3,
+    lazyLoad: true,
+    autoplay: true,
+    center: true,
+    // autoplaySpeed: 1000,
+    // autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+  
+      600: {
+        items: 3
+      },
+  
+      1024: {
+        items: 3
+      },
+  
+      1366: {
+        items: 3
+      }
+    }
+});
 
+// $('.owl-carousel, .gallery-row').owlCarousel({
+//       items: 3,
+//       itemsDesktop: [1199, 3],
+//       itemsDesktopSmall: [980, 2],
+//       itemsMobile: [600, 1],
+//       navigation: true,
+//       navigationText: ["", ""],
+//       pagination: true,
+//       autoPlay: true,
+//       nav:true
+//     })
+</script>
 </body>
 
 </html>
