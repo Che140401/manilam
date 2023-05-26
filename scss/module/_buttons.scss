@@ -1,5 +1,5 @@
 
-.sticy-section{position: fixed;bottom:4%;width: 3%;right:0;
+.sticy-section{position: fixed;bottom:4%;width: 3%;right:0;z-index: 99;
     @include breakpoint (max,970px){width: 5%;}
     @include breakpoint (max,678px){width: 7%;}
     @include breakpoint (max,500px){width: 8%;}
@@ -11,9 +11,11 @@
 .d-flip-btn{font-size: 1.5rem;padding: 0.7rem 1.3rem;background: #AA7B32;border-radius: 7px;}
 
 
-.discover-btn{background-color:$btn-bg-color;font-size: 2.1rem;color:#FFFFFF;padding-left: 4.2rem;padding-right: 2.4rem;padding-bottom: 1.5rem;padding-top: 1.5rem;position: relative;border: none;margin-top: 3.9rem;}
+.discover-btn{background-color:$btn-bg-color;font-size: 2.1rem;color:#FFFFFF;padding-left: 4.2rem;padding-right: 2.4rem;padding-bottom: 1.5rem;padding-top: 1.5rem;position: relative;border: none;}
         .discover-btn::before{content: '';position: absolute;background-image: url('../img/home/discover-more.png');background-repeat: no-repeat;width: 20%;background-size: 69%;height: 100%;top: 0;left: 0;}
         .discover-btn::after{content: '';position: absolute;background-image: url('../img/home/plus-home.png');background-repeat: no-repeat;width: 10%;height: 42%;background-size: 83%;left: 2%;}
 
 
 .tab-btns{.btn{background-color:$btn-bg-color;border: none;padding-block: 2.5rem;border-radius: 2rem;min-width: 37.4rem;}p{font-size: 3.1rem;color: #FFFFFF;}}
+.common-btn{background-color: $btn-bg-color;font-size: 2rem;color: $color-white;padding-left: 3rem;padding-right: 5.5rem;padding-top: 1.5rem;padding-bottom: 1.5rem;position: relative;}
+.common-btn::after{content: '';position: absolute;background-image: url('../img/arrow-right.png');width: 10%;height: 37%;background-repeat: no-repeat;right: 4%;@include breakpoint (max,1500px){background-size: 75%;}}
