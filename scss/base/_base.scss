@@ -368,9 +368,12 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
 //coll-listing-section
 .coll-listing-section{
     .grey-box{padding: 2.2rem 0;background: #E9E8E8;margin-bottom: 3.2rem;
-        .grey-row{display: flex;justify-content: space-between;
+        .grey-row{display: grid;justify-content: space-between;grid-template-columns: 78% 1fr;position: relative;
             .grey-item{font-size: 2.2rem;line-height: 2.9rem;
                 ul{display:flex;grid-column-gap: 8rem;}
+            }
+            .grey-rightbox{display: flex;align-items: center;
+                .book-img{    position: absolute;right: 0;}
             }
         }
        
