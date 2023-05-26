@@ -79,9 +79,9 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
 .blog-section{
     .contain{ 
         .left-contain{
-           .contain{display: grid;grid-template-columns: 1fr 1fr 1fr;row-gap: 2.2rem;column-gap: 1.3rem;
+           .contain{
             @include breakpoint (max,700px) {grid-template-columns: 1fr;            }
-               .box{border:1px solid #707070;
+               .box{border:1px solid #707070;margin-bottom: 2.2rem;
                    .image{
                     img{width: 100%;}
                    }
@@ -132,7 +132,9 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
                 font-size: 2.5rem;
             }
             .contain{display: block;
-                .box{margin-left: 1.3rem;}
+                .box{margin-left: 1.3rem;
+                &:first-child{margin-left: 0;}
+                }
             }
             .heading02{margin-bottom: 1.25rem;
             }
@@ -163,6 +165,10 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
         }
     }
 }
+.first-slider-box .slick-slide{margin-left: 1.3rem;margin-bottom: 2rem;
+    // &:first-child{margin-left: 0;}
+}
+.blog-section .slick-next, .blog-section .slick-prev{opacity: 0;}
 //blog-detail-section
 .blog-detail{
     margin-top: 4.2rem;
