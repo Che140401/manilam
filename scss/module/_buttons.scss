@@ -17,3 +17,24 @@
 
 
 .tab-btns{.btn{background-color:$btn-bg-color;border: none;padding-block: 2.5rem;border-radius: 2rem;min-width: 37.4rem;}p{font-size: 3.1rem;color: #FFFFFF;}}
+
+
+.menu-btn {display:none;
+    @include breakpoint(max, 767px){ display:block;position: absolute;right:17px;top: 15px;background: none;border: none;padding: 0;width: 25px;height: 25px;z-index:9999;}
+     span{position: relative;
+        @include breakpoint(max, 767px){width: 100%;height: 2px;background: #FFFFFF;margin: 4px 0;display: block;}
+        &::before, &::after{
+         @include breakpoint(max, 767px){content:"";width: 100%;height: 2px;display: block;background: #FFFFFF;display: block;position: absolute;}
+         }
+         &::before{top: -5px}
+         &::after{bottom: -5px}
+        
+     }
+          &.active{
+          span{
+           @include breakpoint(max, 767px){background: #fff;position:fixed;right: 18px;top: 21px;background: none;border: none;padding: 0;width:30px;height: 0;}
+              &::before{transform: rotate(45deg);top: 2px;background: #fff;}
+              &::after{transform: rotate(-45deg);margin-top: -6px;background: #fff;}
+           }
+          }
+  }

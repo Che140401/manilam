@@ -35,6 +35,10 @@ $(".contain .prev").click(function(){
 $(".contain .next").click(function(){
   $(".owl-next").trigger("click");
 });
+$(".menu-btn").click(function(){
+  $(".mob-menubar").toggleClass("active");
+  $(this).toggleClass("active");
+});
 
 $('.Items').slick({
   infinite: true,
