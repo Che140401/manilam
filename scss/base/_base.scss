@@ -3,6 +3,9 @@ html{font-size: 62.5%;
 @include breakpoint(max, 1500px) {font-size: 45%;}
 @include breakpoint(max, 1300px) {font-size: 41.50%;}
 @include breakpoint(max, 1279px) {font-size: 36%;}
+@include breakpoint(max, 1024px) {font-size: 32%;}
+@include breakpoint(max, 768px) {font-size: 30%;}
+
 }
 body{color:#545252;font-family: "FuturaMediumBT";}
 
@@ -10,8 +13,8 @@ body{color:#545252;font-family: "FuturaMediumBT";}
 .container{max-width: 153.9rem;width: 90%;margin: 0 auto;}
 .container-odd{max-width: 127rem;width: 90%;margin: 0 auto;}
 .mt-48{margin-top: 4.8rem;}
-.section{padding-block: 6.5rem 5rem;}
 .pb-90{padding-bottom: 9rem;}
+.section{padding-top: 6.5rem;}
 
 .text-center{text-align: center;}
 .heading02{font-size: 4.8rem;line-height: 4.7rem;margin-bottom: 1.6rem;}
@@ -20,20 +23,22 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 
 // banner-section
 .banner-section{position: relative;
-    .banner-box{position: absolute;left: 21%;top:50%;transform: translateY( -50%);
+    .banner-box{position: absolute;left:50%;top:50%;transform: translate(-100%, -50%);
         @include breakpoint (max,768px){top: 57%;}
         .heading01{font-size: 8.1rem;line-height: 8.9rem;color: $color-white;
             @include breakpoint (max,970px){font-size: 6.1rem;line-height: 6.9rem;}
             @include breakpoint (max,678px){    font-size: 5.1rem;line-height: 5.9rem;}
-            @include breakpoint (max,500px){font-size: 3.1rem;line-height: 3.9rem;}
+            @include breakpoint (max,490px){font-size: 3.1rem;line-height: 3.9rem;}
         }
     }
 }
 // gallery-section
 .gallery-section{
     .gallery-row{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 3.4rem;
-        @include breakpoint (max,768px){display: block;}
+        @include breakpoint (max,768px){grid-column-gap: 1.4rem;}
+        @include breakpoint (max,490px){display: block;}
         .gallery-box{
+        @include breakpoint (max,490px){margin-bottom: 3rem;}
             img{width: 100%;}
         }
     }
@@ -43,11 +48,13 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 }
 // owl crowsel css
 .gallery-center-slider .owl-item.active.center{transform: scale(1.6);z-index: 99999;position: relative;
-    @include breakpoint (max,768px){transform: scale(1);}
+    @include breakpoint (max,1440px){transform: scale(1.4);}
+    @include breakpoint (max,767px){transform: scale(1);}
 }
 .gallery-center-slider .owl-item.active{transform: scale(1);}
-.gallery-center-slider .owl-stage-outer{padding-top: 100px !important;padding-bottom: 100px !important;
-    @include breakpoint (max,768px){padding-top: 0 !important;padding-bottom: 0 !important;}
+.gallery-center-slider .owl-stage-outer{padding-top: 10rem !important;padding-bottom: 10rem !important;
+    // @include breakpoint (max,769px){padding-top: 54px !important;padding-bottom: 54px !important;}
+    @include breakpoint (max,767px){padding-top: 0 !important;padding-bottom: 0 !important;}
 
 }
 
@@ -344,11 +351,29 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 
 //coll-listing-section
 .coll-listing-section{
+    .grey-box{padding: 2.2rem 0;background: #E9E8E8;margin-bottom: 3.2rem;
+        .grey-row{display: flex;justify-content: space-between;
+            .grey-item{font-size: 2.2rem;line-height: 2.9rem;
+                ul{display:flex;grid-column-gap: 8rem;}
+            }
+        }
+       
+    }
     .Listing-row{display: grid;grid-template-columns: 25% 1fr;margin-top: 5rem;
+        .left-box{
+            .list-box{margin-top: 3.6rem;
+            &:first-child{margin-top:0;}
+                .line-img{margin-bottom: 3.6rem;}
+                .list-heading{text-transform: uppercase;margin-bottom: 1.6rem;}
+                p{margin-bottom: .6rem;}
+            }
+        }
         .right-box{
             .inner-right-box{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 5.4rem;
                 .coll-box{
                     img{width: 100%;}
+                    span{font-size: 2.2rem;line-height: 2.5rem;font-weight: bold;margin-top:.9rem;display: block;}
+                    h5{font-size: 2.2rem;line-height: 2.5rem;margin-bottom: 2.6rem;}
                 }
             }
         }
