@@ -25,6 +25,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;}
 .banner-section{position: relative;
     .banner-box{position: absolute;left:50%;top:50%;transform: translate(-100%, -50%);
         @include breakpoint (max,768px){top: 57%;}
+        @include breakpoint (max,500px){top: 64%;}
         .heading01{font-size: 8.1rem;line-height: 8.9rem;color: $color-white;
             @include breakpoint (max,970px){font-size: 6.1rem;line-height: 6.9rem;}
             @include breakpoint (max,678px){    font-size: 5.1rem;line-height: 5.9rem;}
