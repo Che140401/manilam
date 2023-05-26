@@ -297,7 +297,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
         .content{ grid-column: 2/3;    grid-row: 1;padding-left: 6.3rem;}
         .odd-content{grid-column: 1/2;text-align: end;padding-right: 4.4rem;}
         .image{
-            img{position: relative;z-index: 99999;}
+            img{position: relative;z-index: 1;}
         }
         .br1{@include breakpoint (max,700px){display: none;
             }}
@@ -596,10 +596,16 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
 
 
 // data-tab
+
+
+//collections
+
 .tab-btns .btn.active{background-color: $btn-bg-color;}
 
 
-.collection-items{display: none;}
-.collection-items.active{display: block;}
-.collection-items-2{display: none;}
-.collection-items-2.active{display: block;}
+
+
+
+.collection-items{height: 0;opacity: 0;visibility: hidden;}
+.collection-items.active{height: auto;opacity: 1;visibility: visible;}
+

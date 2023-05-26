@@ -1,6 +1,18 @@
 // document ready function
 $(document).ready(function () {
 
+  $(document).on('click', '[data-tab]', function(){
+    $(this).addClass("active");
+    
+    $(this).siblings().removeClass("active");
+    
+    var dataTab = $(this).attr('data-tab');
+    
+    $('#'+dataTab).siblings().removeClass("active");
+    
+    $('#'+dataTab).addClass('active');
+  })
+
   $('.collection-items').slick({
     infinite: true,
     slidesToShow: 4,
