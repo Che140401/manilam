@@ -331,17 +331,21 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
     .similar-product-row {
     }
     .btn-box{margin-top: 5rem;}
-    .btn{padding: 2rem 6rem;font-size: 3.5rem;background: #AA7B32;color: #FFFFFF;}
+    .btn{padding: 2rem 6rem;font-size: 3.5rem;background: #AA7B32;color: #FFFFFF;display: inline-block;}
 }   
 
-.similar-product-img.slick-slide img{width: 100%;padding-right:4rem;
+.similar-product-img{margin-left: 4rem;
+    &:first-child{margin-left: 0;}
+    .slick-slide img{width: 100%;
+}
+
     // &:last-child{padding-right: 0;}
 }
 
 
 //collection-deatil-section
 .collection-deatil-section{
-    .row{display: grid;grid-template-columns: 12% 42% 1fr;align-items: center;
+    .row{display: grid;    grid-template-columns: 9% 37% 1fr;align-items: center;    grid-column-gap: 4.2rem;
         .first-row{
             .first-row-img{}
         }
