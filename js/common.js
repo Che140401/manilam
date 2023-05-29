@@ -11,6 +11,10 @@ $(document).ready(function () {
     $('#'+dataTab).siblings().removeClass("active");
     
     $('#'+dataTab).addClass('active');
+
+    $('.'+dataTab).siblings().removeClass("active");
+    
+    $('.'+dataTab).addClass('active');
   })
 
   $('.collection-items').slick({

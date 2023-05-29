@@ -621,3 +621,9 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
 .collection-items{height: 0;opacity: 0;visibility: hidden;}
 .collection-items.active{height: auto;opacity: 1;visibility: visible;}
 
+
+.laminate-tab{display: none;}
+.laminate-tab.active{display: block;}
+
+.plywood-tab{display: none;}
+.plywood-tab.active{display: block;}
