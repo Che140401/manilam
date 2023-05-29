@@ -383,12 +383,15 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
 .coll-listing-section{
     .grey-box{padding: 2.2rem 0;background: #E9E8E8;margin-bottom: 3.2rem;
         .grey-row{display: grid;justify-content: space-between;grid-template-columns:60% 1fr;position: relative;    grid-column-gap: 24rem;
-            @include breakpoint (max,1500px){grid-column-gap: 16rem;}
-            .grey-item{font-size: 2.2rem;line-height: 2.9rem;
-                ul{display:flex;grid-column-gap: 8rem;}
+            @include breakpoint (max,1500px){grid-column-gap: 23rem;}
+            @include breakpoint (max,769px){grid-column-gap: 19rem;}
+            .grey-item{
+                ul{display:flex;grid-column-gap: 8rem;
+                    li{font-size: 2.2rem;line-height: 2.9rem;}
+                }
             }
             .grey-rightbox{display: flex;align-items: center;position: relative;
-                .book-img{    position: absolute;right: 0;width: 250px;}
+                .book-img{position: absolute;right: 0;width: 25rem;}
             }
         }
        
