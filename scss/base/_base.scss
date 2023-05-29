@@ -316,10 +316,14 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
 //coll-detail-section
 .coll-detail-section{
     .key-feat-row{display: grid;grid-template-columns: 1fr 1fr 1fr;margin-top: 5.9rem;
+        @include breakpoint(max,767px){grid-template-columns: 1fr 1fr; }
         .Feature-box{padding: 8.6rem 8rem;text-align: center;border: 1px solid #707070;
+            @include breakpoint(max,767px){    padding: 2rem 2rem;}
             &:nth-child(even){background: #F3F3F3;}
             .key-img{padding-bottom: 6rem;
-                img{margin: 0 auto;}
+                img{margin: 0 auto;
+                    @include breakpoint(max,767px){    width: 40%;}
+                }
             }
         }
         
@@ -345,7 +349,8 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
 
 //collection-deatil-section
 .collection-deatil-section{
-    .row{display: grid;    grid-template-columns: 9% 37% 1fr;align-items: center;    grid-column-gap: 4.2rem;
+    .row{display: grid;grid-template-columns: 9% 37% 1fr;align-items: center;grid-column-gap: 4.2rem;
+        @include breakpoint(max,767px){    grid-template-columns: 20% auto;}
         .first-row{
             .first-row-img{}
         }
@@ -372,7 +377,8 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
 //coll-listing-section
 .coll-listing-section{
     .grey-box{padding: 2.2rem 0;background: #E9E8E8;margin-bottom: 3.2rem;
-        .grey-row{display: grid;justify-content: space-between;grid-template-columns: 78% 1fr;position: relative;
+        .grey-row{display: grid;justify-content: space-between;grid-template-columns:60% 1fr;position: relative;    grid-column-gap: 24rem;
+            @include breakpoint (max,1500px){grid-column-gap: 16rem;}
             .grey-item{font-size: 2.2rem;line-height: 2.9rem;
                 ul{display:flex;grid-column-gap: 8rem;}
             }
@@ -382,7 +388,8 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
         }
        
     }
-    .Listing-row{display: grid;grid-template-columns: 25% 1fr;margin-top: 5rem;
+    .Listing-row{display: grid;grid-template-columns: 15% 1fr;margin-top: 5rem;    grid-column-gap: 10rem;
+        @include breakpoint(max,501px){display: block;}
         .left-box{
             .list-box{margin-top: 3.6rem;
             &:first-child{margin-top:0;}
@@ -393,6 +400,7 @@ p{font-family: 'futurabookbt';font-size: 2rem;line-height: 2.7rem;
         }
         .right-box{
             .inner-right-box{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 5.4rem;
+                @include breakpoint (max,500px){grid-template-columns: 1fr 1fr;grid-column-gap: 1.4rem;}
                 .coll-box{
                     img{width: 100%;}
                     span{font-size: 2.2rem;line-height: 2.5rem;font-weight: bold;margin-top:.9rem;display: block;}
