@@ -1,5 +1,5 @@
 
-.sticy-section{position: fixed;bottom:4%;width: 3%;right:0;z-index: 9999999;
+.sticy-section{position: fixed;bottom:15%;width: 3%;right:0;z-index: 9999999;
     @include breakpoint (max,970px){width: 5%;}
     @include breakpoint (max,678px){width: 7%;}
     @include breakpoint (max,500px){width: 8%;}
@@ -8,10 +8,10 @@
     .wp-btn{padding: 1rem; background: #48B760;border-bottom-left-radius: 15px;border-top-left-radius: 15px;}
 }
 
-.d-flip-btn{font-size: 1.5rem;padding: 0.7rem 1.3rem;background: #AA7B32;border-radius: 7px;color: #FFFFFF;}
+.d-flip-btn{font-size: 1.5rem;padding: 0.7rem 1.3rem;background: #AA7B32;border-radius: 7px;color: #FFFFFF;text-transform: uppercase;}
 
 
-.discover-btn{background-color:$btn-bg-color;font-size: 2.1rem;color:#FFFFFF;padding-left: 4.2rem;padding-right: 2.4rem;padding-bottom: 1.5rem;padding-top: 1.5rem;position: relative;border: none;}
+.discover-btn{background-color:$btn-bg-color;font-size: 2.1rem;color:#FFFFFF;padding-left: 4.2rem;display: inline-block; padding-right: 2.4rem;padding-bottom: 1.5rem;padding-top: 1.5rem;position: relative;border: none;}
         .discover-btn::before{content: '';position: absolute;background-image: url('../img/home/discover-more.png');background-repeat: no-repeat;width: 20%;background-size: 60%;height: 100%;top: 0;left: 0;}
         .discover-btn::after{content: '';position: absolute;background-image: url('../img/home/plus-home.png');background-repeat: no-repeat;width: 10%;height: 42%;background-size: 83%;left: 2%;}
 
@@ -45,3 +45,15 @@
     }
 }
 
+
+.home-banner-slider {
+    .slick-dots{position: absolute;left: 22%;bottom: 5%;
+        @include breakpoint (max,1280px){left: 23%;}
+        @include breakpoint(max,768px){    left: 25%;}
+        @include breakpoint(max,500px){ left: 47%;bottom: -16px;}
+        li{display: inline-block;margin-right: .8rem;width: 1.8rem;height: 1.8rem;background:#8F887B;border-radius: 100%;vertical-align: middle;font-size: 0;border: none;text-align: center;border: 1px solid #707070;
+            &:active{background: #FFFFFF;}
+            &:hover{background: #FFFFFF;}
+            button{font-size: 0;color: transparent;opacity: 0;}
+        }}
+    }
