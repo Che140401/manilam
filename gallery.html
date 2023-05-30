@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
     integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
+  
 
 </head>
 
@@ -62,15 +64,21 @@
         <h2 class="heading02 text-center">Events and Activities</h2>
         <div class="gallery-row ">
           <div class="gallery-box">
+            <a data-fancybox="video" data-src="https://www.youtube.com/embed/WcOv5QQOmcY?autoplay=1">
             <img src="img/gallery/event2.png" alt="">
+            </a>
             <h5 class="heading05 text-center">Lorem Ipsum Eventon 2023</h5>
           </div>
           <div class="gallery-box">
+            <a data-fancybox="image" data-src="img/gallery/event2.png">
             <img src="img/gallery/event2.png" alt="">
+          </a>
             <h5 class="heading05 text-center">Lorem Ipsum Eventon 2023</h5>
           </div>
           <div class="gallery-box">
+            <a data-fancybox="image" data-src="img/gallery/event3.png">
             <img src="img/gallery/event3.png" alt="">
+          </a>
             <h5 class="heading05 text-center">Lorem Ipsum Eventon 2023</h5>
           </div>
         </div>
@@ -81,15 +89,21 @@
         <h2 class="heading02 text-center">Factories and Experience Center</h2>
         <div class="gallery-row">
           <div class="gallery-box">
-            <img src="img/gallery/event2.png" alt="">
+            <a data-fancybox="image" data-src="img/gallery/Events.png">
+            <img src="img/gallery/Events.png" alt="">
+            </a>
             <h5 class="heading05 text-center">Lorem Ipsum Eventon 2023</h5>
           </div>
           <div class="gallery-box">
-            <img src="img/gallery/event2.png" alt="">
+            <a data-fancybox="image" data-src="img/gallery/download.png">
+            <img src="img/gallery/download.png" alt="">
+            </a>
             <h5 class="heading05 text-center">Lorem Ipsum Eventon 2023</h5>
           </div>
           <div class="gallery-box">
-            <img src="img/gallery/event3.png" alt="">
+            <a data-fancybox="image" data-src="img/gallery/image-5.png">
+            <img src="img/gallery/image-5.png" alt="">
+          </a>
             <h5 class="heading05 text-center">Lorem Ipsum Eventon 2023</h5>
           </div>
         </div>
@@ -98,7 +112,7 @@
     <section class="section gallery-event-slider-section">
       <div class="container">
         <h2 class="heading02 text-center">Lorem Ipsum Event</h2>
-        <div class="gallery-row gallery-center-slider owl-carousel">
+        <div class="gallery-row gallery-center-slider owl-carousel ">
           <div class="gallery-box">
             <img src="img/gallery/gallery_slider.png" alt="">
           </div>
@@ -167,6 +181,7 @@
   </main>
 
   <script src="./js/jquery-1.11.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
